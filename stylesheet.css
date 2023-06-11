@@ -391,7 +391,7 @@ nav .fa-xmark{
         margin-top: 85%;
         font-size: 16px;
     }
-    .header-text h1{
+    .header-text h1 , .about-col-1 h1 , .container h1 , .contact-left h1{
         font-size: 25px;
     }
     nav .fa-bars{
@@ -428,10 +428,19 @@ nav .fa-xmark{
         font-size: 30px;
     }
     .scroll{
-        margin-top: 80px;
-        font-size: 10px;
+        margin-top: 100px;
+        font-size: 15px;
+    }
+    .about-col-1 img{
+        width: 200%;
+    }
+    .tab-links{
+        margin-right: 40px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+    .contact-right{
+        width: 60%;
     }
 }
