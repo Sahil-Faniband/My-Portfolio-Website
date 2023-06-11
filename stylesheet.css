@@ -443,4 +443,7 @@ nav .fa-xmark{
     .contact-right{
         width: 60%;
     }
+    .contact-right a{
+        margin-left: 80%;
+    }
 }
