@@ -383,9 +383,9 @@ nav .fa-bars{
 nav .fa-xmark{
     display: none;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 700px){
     #header{
-        background-image: url(Untitled--design-4.png);
+        background-image: url(Untitled---design-2.png);
     }
     .header-text{
         margin-top: 100%;
