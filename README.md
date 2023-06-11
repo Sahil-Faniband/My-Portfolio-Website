@@ -1,6 +1,6 @@
 # My-Portfolio-Website
+Link:https://www.linkedin.com/in/sahil-faniband-561197233
 
-# My Portfolio
 
 Welcome to my portfolio repository! This repository contains the source code and assets for my personal portfolio website.
 
@@ -12,7 +12,6 @@ Welcome to my portfolio repository! This repository contains the source code and
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- PORTFOLIO WEBSITE(#PORTFOLIO WEBSITE)
 - [Contact](#contact)
 
 ## Introduction
@@ -56,10 +55,6 @@ To use or customize the portfolio website, you can:
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request. Let's make this portfolio even better together!
-
-
-## PORTFOLIO WEBSITE
-Link:https://www.linkedin.com/in/sahil-faniband-561197233
 
 
 ## Contact
