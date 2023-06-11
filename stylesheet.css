@@ -428,7 +428,7 @@ nav .fa-xmark{
         font-size: 30px;
     }
     .scroll{
-        margin-top: 100px;
+        margin-top: 60px;
         font-size: 15px;
     }
     .about-col-1 img{
@@ -444,6 +444,6 @@ nav .fa-xmark{
         width: 60%;
     }
     .contact-right a{
-        margin-left: 80%;
+        margin-left: 65%;
     }
 }
