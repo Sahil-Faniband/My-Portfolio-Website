@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title><link rel="stylesheet" href="stylesheet.css" >
+    <script src="https://kit.fontawesome.com/5ce96f8bf4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><img src="/Users/sahil/Desktop/Codes/port/sahil-high-resolution-logo-color-on-transparent-background.png" class="logo" ></a> 
+                <ul id="sidemenu">
+                    <li><a href="#header"><i class="fa-solid fa-house-user"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i></i>About</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-lightbulb"></i>Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="closebtn" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <h2>>Hello World!_,</h2>
+                <h1>I'm <span>Sahil Faniband</span><br> from India.</h1>
+                <p style="font-size: 17px; color: rgba(211, 211, 211, 0.786); padding: 7px;">Skilled creator of efficient code and <br>exciting user experiences.</p>
+               
+               <div class="profiles">
+                <a target="_blank" href="https://github.com/INFINITY-962"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/sahil-faniband-561197233"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <a href="/Users/sahil/Desktop/IMP Notes/Resume/Sahil_Faniband_Resume_3_29-5.pdf" download ><button class="btn" title="cv"><i class="fa-regular fa-file-arrow-down"></i> Download CV </button></a>
+               <div class="scroll"><center>
+                <p>Scroll Down</p>
+                <br>
+                <i class="fa-solid fa-circle-chevron-down fa-bounce"></i>
+                </center>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About-->
+    <div id="about">
+       <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <img src="/Users/sahil/Desktop/Codes/port/B1C015B2-57F7-483A-A884-ACFB32BA2226-fotor-bg-remover-20230611155359.png" alt="">
+            </div>
+            <div class="about-col-2">
+                
+                <p>
+                    I'm currently pursuing B.E in Information Science and Engineering at KLS Gogte Institute of Technology in Belagavi, Karnataka, India.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('technical_skills')"><i class="fa-solid fa-code"></i> Technical Skills</p>
+                    <p class="tab-links" onclick="opentab('soft_skills')"><i class="fa-solid fa-infinity"></i> Soft Skills</p>
+                    <p class="tab-links" onclick="opentab('education')"><i class="fa-solid fa-school"></i> Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="technical_skills">
+                    <p>C/C++</p>
+                    <div class="skillcontainer">
+                    <div class="skills c">90%</div>
+                    </div>
+                    <br>
+                    <p>DSA</p>
+                    <div class="skillcontainer">
+                    <div class="skills dsa">85%</div>
+                    </div>
+                    <br>
+                    <p>OOPS</p>
+                    <div class="skillcontainer">
+                    <div class="skills oops">90%</div>
+                    </div>
+                    <br>
+                    <p>SQL</p>
+                    <div class="skillcontainer">
+                    <div class="skills sql">75%</div>
+                    </div>
+                    <br>
+                    <p>HTML/CSS</p>
+                    <div class="skillcontainer">
+                    <div class="skills htmlcss">80%</div>
+                    </div>
+                </div>
+                <div class="tab-contents" id="soft_skills">
+                    <ul>
+                        <li><span>Problem Solving</span></li>
+                        <li><span>Adaptable & Flexible</span></li>
+                        <li><span>Observant</span></li>
+                        <li><span>Emotional Intelligent</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>B.E in Information Science and Engineering</span>
+                            <br>KLS Gogte Institute of Technology Belagavi, Karnataka, India
+                            <br>7.65 CGPA
+                            <br><p style="text-align: right;"><i class="fa-solid fa-calendar-days"></i>&nbsp;Expected Jul 2024</p>
+                        </li>
+                        <li>
+                            <span>XII (12th) in PCMCs</span>
+                            <br>KLE Prerana Residential PU College Hubli, Karnataka, India
+                            <br>84.8% (90.67% in PCM)
+                            <br><p style="text-align: right;"><i class="fa-solid fa-calendar-days"></i>&nbsp;Mar 2020</p>
+                        </li>
+                        <li>
+                            <span>X (10th) Secondary School</span>
+                            <br>SFC English Medium School Gadag, Karnataka, India
+                            <br>80.80%
+                            <br><p style="text-align: right;"><i class="fa-solid fa-calendar-days"></i>&nbsp;Mar 2018</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+
+    <!--Projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-file-zipper"></i>
+                    <h2>Text File Compression and Decompression</h2>
+                    <p>>Developed Program to Compress and Decompress the Text File using Huffman’s Algorithm.</p>
+                    <a target="_blank" href="https://github.com/INFINITY-962/Text-File-Compression-and-Decompression.git"><button title="more">More ></button></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>2048 Game</h2>
+                    <p>>Created a Popular tile-based game.<br>
+                        <br>>Implemented using 2D Array and Game Logic.</p>
+                    <a target="_blank" href="https://github.com/INFINITY-962/2048-in-Cpp.git" ><button title="more">More ></button></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users-viewfinder"></i>
+                    <h2>Real-Time Human Detection</h2>
+                    <p>>Built a Python Open CV Project for Human Detection and Counting System Utilizing a Camera or a Video or An Image.</p>
+                    <a target="_blank" href="https://github.com/INFINITY-962/REAL-TIME-HUMAN-DETECTION-AND-COUNTING-OPENCV-PYTHON.git"> <button title="more">More ></button></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sahilfaniband9602@gmail.com</p>
+                    <p class="hide-phone-number"><i class="fa-sharp fa-solid fa-phone"></i>+91 9902442577</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://instagram.com/sahil_faniband?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://twitter.com/sahil_faniband"><i class="fa-brands fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/sahil.faniband"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Nmae" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit&nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+                        
+                    </form>
+                    <a href="#header" ><i class="fa-sharp fa-solid fa-circle-chevron-up fa-bounce"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"></i> Sahil. </p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-175px";
+        }
+    </script>
+</body>
+</html>
