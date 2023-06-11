@@ -1,5 +1,5 @@
 # My-Portfolio-Website
-website:-[Portfolio](https://infinity-962.github.io/My-Portfolio-Website/)
+Website: [Portfolio](https://infinity-962.github.io/My-Portfolio-Website/)
 
 
 Welcome to my portfolio repository! This repository contains the source code and assets for my personal portfolio website.
