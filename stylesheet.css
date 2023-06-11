@@ -348,7 +348,7 @@ nav ul li a:hover::after{
     margin-top: 60px;
 }
 form input, form textarea{
-    width: 100%;
+    width: 90%;
     height: 40%;
     border: 0.5px solid rgb(0,121,227);
     outline: none;
