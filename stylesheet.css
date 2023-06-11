@@ -383,12 +383,12 @@ nav .fa-bars{
 nav .fa-xmark{
     display: none;
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 900px){
     #header{
         background-image: url(Untitled---design-2.png);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 85%;
         font-size: 16px;
     }
     .header-text h1{
