@@ -12,6 +12,7 @@ Welcome to my portfolio repository! This repository contains the source code and
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- PORTFOLIO WEBSITE(#PORTFOLIO WEBSITE)
 - [Contact](#contact)
 
 ## Introduction
@@ -56,11 +57,15 @@ To use or customize the portfolio website, you can:
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request. Let's make this portfolio even better together!
 
+
+## PORTFOLIO WEBSITE
+Link:https://www.linkedin.com/in/sahil-faniband-561197233
+
+
 ## Contact
 
 You can reach me via email at sahilfaniband9602@gmail.com. Let's connect on [LinkedIn](https://www.linkedin.com/in/sahil-faniband-561197233)!
 
 
-##PORTFOLIO WEBSITE
-Link:https://www.linkedin.com/in/sahil-faniband-561197233
+
 
