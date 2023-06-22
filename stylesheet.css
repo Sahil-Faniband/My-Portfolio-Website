@@ -139,9 +139,8 @@ nav ul li a:hover::after{
 .about-col-1 img{
     margin-top: 20px;
     width: 60%;
-    border-bottom: rgb(0,121,227) 5px solid;
-    border-left: rgb(0,121,227) 5px solid;
-    border-radius: 5px;
+    
+    filter: drop-shadow(-10px 8px 6px rgba(0,121,227));
 }
 .about-col-2{
     flex-basis: 60%;
