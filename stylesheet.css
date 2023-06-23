@@ -348,23 +348,30 @@ nav ul li a:hover::after{
     width: 100%;
     margin-top: 60px;
 }
+.contact-right form p{
+    margin-top: 20px;
+}
 form input, form textarea{
     width: 90%;
-    height: 40%;
-    border: 0.5px solid rgb(0,121,227);
+    height: 30%;
+    border: 1px solid rgb(0,121,227);
     outline: none;
     background:  rgba(90, 90, 90, 0.736);
     padding: 15px;
-    margin: 15px 0px;
+    margin: 10px 0px;
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 6px;
 }
 .contact-right a{
     color: white;
     font-size: 30px;
-    margin-left: 100%;
+    margin-left: 90%;
     transition: 0.5s;
+}
+.contact-right span{
+    margin-top: 20px;
+    display: block;
 }
 .copyright{
     width: 100%;
