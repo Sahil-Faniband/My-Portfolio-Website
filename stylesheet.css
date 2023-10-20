@@ -9,7 +9,12 @@ html{
 }
 body{
     background-color: #252525;
-    color: aliceblue;
+    background:
+    linear-gradient (
+    #0d0d0d, #212121);
+    font-family:
+    "Poppins";
+    color: #c9d8f2;
     
 }
 #header{
@@ -381,7 +386,6 @@ form input, form textarea{
     font-weight: 300;
     margin-top: 20px;
 }
-
 
 
 /*----CSS for small screens-----*/
