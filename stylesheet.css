@@ -8,21 +8,21 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #000000;
+   
     background:linear-gradient (
     #0d0d0d, #212121);
     font-family:
     "Poppins";
     color:white;
+    background-image: url(bg.jpeg);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
     
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(bg.jpeg);
-    background-attachment:fixed;
-    background-position: center;
-    background-size: cover;
 }
 
 .container{
@@ -42,7 +42,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: top;
+    
     
 }
 
@@ -128,10 +128,13 @@ nav ul li a:hover::after{
 }
 /*-------------------About-------------------------*/
 #about{
+    height: 600px;
     padding: 60px 0;
+    margin: 40px;
     color: white(208, 32, 32);
-    background-color: #252525;
+    background-color: rgba(2, 61, 112, 0.888);
     border-radius: 10px;
+    filter: drop-shadow(0px -150px 300px rgb(0,121,227));
 }
 .row{
     display: flex;
@@ -143,12 +146,14 @@ nav ul li a:hover::after{
 
 }
 .about-col-1 img{
-    margin-top: 20px;
+    margin-top: 40px;
     width: 60%;
     border-radius: 10px;
-    filter: drop-shadow(-10px 8px 6px rgba(0, 121, 227, 0.624));
+    filter: drop-shadow(-10px 8px 6px black);
+    border: #000000 2px solid;
 }
 .about-col-2{
+    font-size: large;
     flex-basis: 60%;
     margin-top: 40px;
 }
@@ -160,7 +165,8 @@ nav ul li a:hover::after{
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
-
+    padding-top: 10px;
+    border-top:  2px solid white ;
 }
 .tab-links{
     margin-right: 50px;
@@ -172,8 +178,8 @@ nav ul li a:hover::after{
 .tab-links::after{
     content: "";
     width: 0;
-    height: 3px;
-    background: rgb(0,121,227);
+    height: 4px;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -194,7 +200,7 @@ nav ul li a:hover::after{
 }
 .skillcontainer {
     width: 70%;
-    background-color:  rgba(90, 90, 90, 0.736);
+    background-color:  black;
     transition: 0.5s;
   }
   .skillcontainer:hover{
@@ -205,7 +211,7 @@ nav ul li a:hover::after{
     text-align: right;
     font-size: small;
     padding: 0.75px;
-    color: white;
+    color: black;
     transition: 0.5s;
   }
 .skills:hover{
@@ -214,11 +220,11 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
   
-  .c{width: 90%; background-color: rgb(0,121,227); transition: 0.5s;}
-  .dsa {width: 85%; background-color: rgb(0,121,227); transition: 0.5s;}
-  .oops {width: 90%; background-color: rgb(0,121,227); transition: 0.5s;}
-  .sql {width: 75%; background-color: rgb(0,121,227); transition: 0.5s;}
-  .htmlcss {width: 80%; background-color: rgb(0,121,227); transition: 0.5s;}
+  .c{width: 90%; background-color: white; transition: 0.5s;}
+  .dsa {width: 85%; background-color: white; transition: 0.5s;}
+  .oops {width: 90%; background-color: white; transition: 0.5s;}
+  .sql {width: 75%; background-color: white; transition: 0.5s;}
+  .htmlcss {width: 80%; background-color: white; transition: 0.5s;}
 
 .tab-contents{
     display: none;
@@ -228,7 +234,7 @@ nav ul li a:hover::after{
 }
 
 #education span{
-    color: rgb(0,121,227);
+    color: white;
     font-weight: bold;
     font-size: 16px;
     transition: 0.5s;
@@ -240,16 +246,20 @@ nav ul li a:hover::after{
 /*--Projectx--*/
 #projects{
     padding: 30px 0;
-
+    background-color: #212121ec;
+    margin: 40px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 100px #212121);
 }
 .projects-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
+    border-radius: 10px;
     margin-top: 50px;
 }
 .projects-list div{
-    background-color: rgba(90, 90, 90, 0.736);
+    background-color: rgb(90, 90, 90);
     padding: 40px;
     font-size: 12px;
     font-weight: 300;
@@ -303,6 +313,10 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 /*--contacts--*/
+.contactme{
+    background-color: #000000;
+    filter: drop-shadow(0px -80px 60px black);
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -387,9 +401,14 @@ form input, form textarea{
     width: 100%;
     text-align: center;
     padding: 25px;
-    background-color:  rgba(90, 90, 90, 0.736);
+    background-color:  #0d0d0d;
     font-weight: 300;
     margin-top: 20px;
+    filter: drop-shadow(0px -50px 150px rgb(0,121,227));
+}
+.copyright p a{
+    text-decoration: none;
+    color: white;
 }
 
 
