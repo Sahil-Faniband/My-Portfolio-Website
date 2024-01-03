@@ -363,17 +363,20 @@ nav ul li a:hover::after{
     font-size: 17px;
     display: inline-block;
     cursor: pointer;
+    margin-left: 20px;
 }
 .contact-right form{
     align-items: center;
-    width: 100%;
-    margin-top: 60px;
+    width: 90%;
+    margin-top: 80px;
     background-color: #212121;
     border-radius: 10px;
     padding: 50px;
 }
 .contact-right form p{
     margin-top: 20px;
+    margin-left: 20px;
+
 }
 form input, form textarea{
     width: 90%;
@@ -382,7 +385,7 @@ form input, form textarea{
     outline: none;
     background:  rgba(90, 90, 90, 0.736);
     padding: 15px;
-    margin: 10px 0px;
+    margin: 10px 20px;
     color: rgb(255, 255, 255);
     font-size: 15px;
     border-radius: 6px;
@@ -419,16 +422,42 @@ nav .fa-bars{
 nav .fa-xmark{
     display: none;
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1024px){
     #header{
         background-image: url(Untitled---design-4.jpeg);
+        background-attachment:fixed;
+        background-position: center;
+        background-size: cover;
     }
     .header-text{
-        margin-top: 85%;
+        margin-top: 120%;
         font-size: 16px;
     }
     .header-text h1 , .about-col-1 h1 , .container h1 , .contact-left h1{
         font-size: 25px;
+    }
+    #about{
+        height: 1150px;
+    }
+    .about-col-1{
+        flex-basis: 0%;
+    }
+    .about-col-2{
+        width: 250px;
+        font-size: medium;
+        flex-basis: 0%;
+    }
+    .tab-titles{
+        justify-content: space-between;
+    }
+    .tab-links{
+        font-size: medium;
+    }
+    #education{
+        padding: 1px;
+    }
+    #education li{
+        padding-top: 4px;
     }
     nav .fa-bars{
         display: block;
@@ -470,6 +499,9 @@ nav .fa-xmark{
     .about-col-1 img{
         width: 200%;
     }
+    .projects-list div h2{
+        font-size: 25px;
+    }
     .tab-links{
         margin-right: 40px;
     }
@@ -481,5 +513,12 @@ nav .fa-xmark{
     }
     .contact-right a{
         margin-left: 95%;
+    }
+    .contact-right form{
+        width: 110%;
+        padding-left: 0%;
+    }
+    form input, form textarea{
+        width: 100%;
     }
 }
