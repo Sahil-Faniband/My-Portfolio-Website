@@ -13,28 +13,27 @@ body{
     #0d0d0d, #212121);
     font-family:
     "Poppins";
-    color:white;
-    background-image: url(bg.jpeg);
-    background-attachment:fixed;
-    background-position: center;
-    background-size: cover;
+    color:rgb(7, 7, 7);
+    
+ 
     
 }
-#header{
-    width: 100%;
-    height: 100vh;
-}
 
-.container{
-    padding: 10px 10%;
+
+.headcontainer{
+    background-color: rgb(255, 255, 255);
+    padding: 10px ;
+    position: sticky; top: 0;
+    z-index: 2;
+    filter: drop-shadow(0px 4px 13px #0b0421);
 }
-.container nav ul li i{
+.headcontainer nav ul li i{
     padding: 10px;
     font-size: 20px;
     transition: 0.5s;
 }
-.container nav ul li i:hover{
-    font-size: 23px;
+.headcontainer nav ul li i:hover{
+    color: rgb(240, 194, 68);
     transition: 0.5s;
 }
 nav{
@@ -46,16 +45,22 @@ nav{
     
 }
 
+.menu{
+    margin-right: 5%;
+}
+
 .logo{
    width: 100px;
+   margin-left: 85%;
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 nav ul li a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: none;
     position: relative;
@@ -75,19 +80,25 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-top: 15%;
+    padding-left: 15%;
     font-size: 30px;
     transition: 0.5s;
+    animation: fadeIn 1.5s ease 1s forwards;
+    opacity: 0;
 }
 .header-text h1{
-    font-size: 60px;
-    margin-top: 10px;
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px;
 }
 .header-text h2{
     font-family: 'IBM Plex Mono', monospace;
-    color: rgb(26, 164, 26);
+    color: rgb(103, 236, 103);
+    padding: 10px;
 }
 .header-text h1 span{
-    color: rgb(0,121,227);
+    color: rgb(242, 245, 248);
+    padding: 5px;
 }
 .btn{
     width: 140px;
@@ -106,8 +117,8 @@ nav ul li a:hover::after{
 .btn:hover{
     width: 150px;
     color: white;
-    background-color: rgba(52, 52, 52, 0.774);
-    border: white 1px solid;
+    background-color: rgb(240, 194, 68) ;
+    border: rgb(0, 0, 0) 1px solid;
     transition: 0.5s;
 }
 .profiles a{
@@ -115,28 +126,232 @@ nav ul li a:hover::after{
     margin-top: 20px;
     font-size: 50px;
     margin-right: 15px;
-    color: rgba(239, 239, 239, 0.814);
+    color: white;
     display: inline-block;
     transition: transform 0.5s;
 }
 .profiles a:hover{
-    color: rgb(0,121,227);
+    color: rgb(240, 194, 68);
     transform: translateY(-5px);
 }
-.scroll{
-    color:  rgba(239, 239, 239, 0.814);
-    font-size: 20px;
-    margin-top: 60px;
-}
-/*-------------------About-------------------------*/
-#about{
-    height: 900px;
-    padding: 60px 0;
-    margin: 40px;
-    color: white(208, 32, 32);
-    background-color: rgba(2, 61, 112, 0.888);
-    border-radius: 10px;
-    filter: drop-shadow(0px -100px 200px rgb(0,121,227));
+
+/* Banner Styles */
+.banner {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    line-height: 30px;
+  }
+  .banner__left {
+    
+    width: 35%;
+    height: 600px;
+    background-color: rgb(240, 194, 68) ;
+    color: #FFFFFF;
+    position: relative;
+    transition: width 0.5s ease;
+  }
+  .banner__right {
+    width: 65%;
+    height: 600px;
+    background-color: rgb(0,121,227);
+    position: relative;
+    transition: width 0.5s ease;
+  }
+  .banner__profile {
+    position:absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 500px;
+    z-index: 1;
+    filter: drop-shadow(-19px 4px 13px #0b0421);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    
+  }
+  .banner__content {
+    position: absolute;
+    left: 16%;
+    top: 20%;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    animation: fadeIn 1s ease forwards;
+  }
+  .banner__title {
+    font-family: "Montserrat", sans-serif;
+    line-height: 40px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease 0.5s forwards;
+    opacity: 0;
+  }
+  .banner__title--l {
+    font-size: 40px;
+  }
+  .banner__title--m {
+    font-size: 30px;
+  }
+  .banner__description {
+    font-size: 30px;
+    font-family: "Caveat", cursive;
+    letter-spacing: 5px;
+    animation: fadeIn 1s ease 1s forwards;
+    opacity: 0;
+  }
+  
+  
+  /* Banner Content Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ /*-------------------About-------------------------*/
+ .about_me{
+    height: 85vh;
+ }
+  .title {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .title__end {
+    color: rgb(240, 194, 68);
+  }
+  .aboutMeContainer {
+    display: flex; /* Specifies that the container should display its children as flex items */
+    gap: 20px; /* Specifies a gap of 20px between the flex items inside the container */
+    height: 60vh; /* Sets the height of the container to 100% of the viewport height */
+    align-items: center;
+    margin-left: 50%;
+  }
+  
+  .card {
+    height: 400px; /* Sets the height of the card to 300px */
+    width: 300px; /* Sets the width of the card to 300px */
+    margin: 10px 0; /* Sets a margin of 10px on the top and bottom and 0 on the left and right */
+    transition: ease all 2.3s; /* Specifies the transition effect for all properties with a duration of 2.3s and easing function ease */
+    perspective: 1200px; /* Specifies the perspective view for the 3D transformations */
+    position:absolute;
+    transform: translateX(-50%);
+    z-index: 1;
+    filter: drop-shadow(-19px 4px 13px #000000);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    animation: fadeIn 1s ease 0.5s forwards;
+    opacity: 0;
+  }
+  
+  .card:hover .cover {
+    transform: rotateX(0deg) rotateY(-180deg); /* Rotates the cover element on the Y-axis when the card is hovered */
+  }
+  
+  .card:hover .cover:before {
+    transform: translateZ(30px); /* Translates the cover element along the Z-axis when the card is hovered */
+  }
+  
+  .card:hover .cover:after {
+    background-color: black; /* Changes the background color of the cover element to black when the card is hovered */
+  }
+  
+  .card:hover .cover h1 {
+    transform: translateZ(100px); /* Translates the h1 element along the Z-axis when the card is hovered */
+  }
+  
+  .card:hover .cover .price {
+    transform: translateZ(60px); /* Translates the price element along the Z-axis when the card is hovered */
+  }
+  
+  .card:hover .cover a {
+    transform: translateZ(-60px) rotatey(-180deg); /* Translates the link element along the Z-axis and rotates it on the Y-axis when the card is hovered */
+  }
+  
+  .card .cover {
+    position: absolute; /* Specifies the cover element to be positioned absolutely */
+    height: 100%; /* Sets the height of the cover element to 100% */
+    width: 100%; /* Sets the width of the cover element to 100% */
+    transform-style: preserve-3d; /* Specifies that the cover element should preserve its 3D transformations */
+    transition: ease all 2.3s; /* Specifies the transition effect for all properties with a duration of 2.3s and easing function ease */
+    background-size: cover; /* Specifies that the background image should cover the entire container of the cover element */
+    background-position: center center; /* Specifies the center position for the background image */
+    background-repeat: no-repeat; /* Specifies that the background image should not repeat */
+  }
+  
+  .card .cover:before {
+    content: ''; /* Adds an empty content before the cover element */
+    position: absolute; /* Specifies the pseudo-element to be positioned absolutely */
+    border: 5px solid rgba(255, 255, 255, .5); /* Sets a border for the pseudo-element with a semi-transparent white color */
+    box-shadow: 0 0 12px rgba(0, 0, 0, .3); /* Adds a shadow effect to the pseudo-element */
+    top: 20px; /* Sets the top position of the pseudo-element */
+    left: 20px; /* Sets the left position of the pseudo-element */
+    right: 20px; /* Sets the right position of the pseudo-element */
+    bottom: 20px; /* Sets the bottom position of the pseudo-element */
+    z-index: 2; /* Sets the stacking order of the pseudo-element */
+    transition: ease all 2.3s; /* Specifies the transition effect for all properties with a duration of 2.3s and easing function ease */
+    transform-style: preserve-3d; /* Specifies that the pseudo-element should preserve its 3D transformations */
+    transform: translateZ(0px); /* Translates the pseudo-element along the Z-axis */
+  }
+  
+  .card .cover:after {
+    content: ''; /* Adds an empty content after the cover element */
+    position: absolute; /* Specifies the pseudo-element to be positioned absolutely */
+    top: 0px; /* Sets the top position of the pseudo-element */
+    left: 0px; /* Sets the left position of the pseudo-element */
+    right: 0px; /* Sets the right position of the pseudo-element */
+    bottom: 0px; /* Sets the bottom position of the pseudo-element */
+    z-index: 2; /* Sets the stacking order of the pseudo-element */
+    transition: ease all 1.3s; /* Specifies the transition effect for all properties with a duration of 1.3s and easing function ease */
+    background: rgba(0, 0, 0, .4); /* Sets the background color of the pseudo-element to a semi-transparent black */
+  }
+  
+  .card .cover.item {
+    background-image: url('02D622CC-C5E9-47F8-AE91-9D6E2FB882D5.PNG'); /* Sets the background image for the cover element */
+  }
+  
+  .card > .cover > h1 {
+    font-weight: 600; /* Sets the font weight of the h1 element to 600 (bold) */
+    position: absolute; /* Specifies the h1 element to be positioned absolutely */
+    bottom: 55px; /* Sets the bottom position of the h1 element */
+    left: 50px; /* Sets the left position of the h1 element */
+    color: white; /* Sets the text color of the h1 element to white */
+    transform-style: preserve-3d; /* Specifies that the h1 element should preserve its 3D transformations */
+    transition: ease all 2.3s; /* Specifies the transition effect for all properties with a duration of 2.3s and easing function ease */
+    z-index: 3; /* Sets the stacking order of the h1 element */
+    font-size: 2em; /* Sets the font size of the h1 element */
+    transform: translateZ(0px); /* Translates the h1 element along the Z-axis */
+  }
+  
+  .card > .card-back {
+    position: absolute; /* Specifies the card-back element to be positioned absolutely */
+    height: 100%; /* Sets the height of the card-back element to 100% */
+    width: 100%; /* Sets the width of the card-back element to 100% */
+    background: #0b0f08; /* Sets the background color of the card-back element */
+    transform-style: preserve-3d; /* Specifies that the card-back element should preserve its 3D transformations */
+    transition: ease all 2.3s; /* Specifies the transition effect for all properties with a duration of 2.3s and easing function ease */
+    transform: translateZ(-1px); /* Translates the card-back element along the Z-axis */
+    display: flex; /* Specifies that the card-back element should display its children as flex items */
+    align-items: center; /* Specifies the alignment of the flex items along the cross axis */
+    justify-content: center; /* Specifies the alignment of the flex items along the main axis */
+  }
+  .aboutMe__right{
+    font-size: 18px; color: rgb(0, 0, 0); 
+    text-align: justify;
+    padding-right: 8%;
+    margin-left: 5%;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease 1.5s forwards;
+    opacity: 0;
+  }
+
+.container{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    line-height: 30px;
 }
 .row{
     display: flex;
@@ -147,17 +362,14 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 
 }
-.about-col-1 img{
-    margin-top: 40px;
-    width: 75%;
-    border-radius: 20px;
-    filter: drop-shadow(-10px 8px 6px black);
-    
-}
+
 .about-col-2{
-    font-size: large;
+    font-size: 18px;
     flex-basis: 60%;
-    margin-top: 40px;
+    margin-top: 20px;
+    padding-right: 15%;
+    
+    
 }
 .sub-title{
     font-size: 60px;
@@ -181,7 +393,7 @@ nav ul li a:hover::after{
     content: "";
     width: 0;
     height: 4px;
-    background: white;
+    background: rgb(0, 121, 227);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -190,12 +402,18 @@ nav ul li a:hover::after{
 .tab-links.active-link::after{
     width: 50%;
 }
+.tab-contents{
+    display: none;
+    animation: fadeIn 0.75s ease 0.20s forwards;
+    opacity: 0;
+}
 .tab-contents ul li{
     
     margin: 10px 0;
 }
-#soft_skills span{
+#soft_skills span , #languages span{
     font-size: 20px;
+    
 }
 .tab-contents p{
     font-size: 16px;
@@ -221,51 +439,193 @@ nav ul li a:hover::after{
     font-size: medium;
     transition: 0.5s;
 }
-  
-  .c{width: 90%; background-color: white; transition: 0.5s;}
-  .dsa {width: 85%; background-color: white; transition: 0.5s;}
-  .oops {width: 90%; background-color: white; transition: 0.5s;}
-  .sql {width: 75%; background-color: white; transition: 0.5s;}
-  .htmlcss {width: 80%; background-color: white; transition: 0.5s;}
-  .js{width: 60%; background-color: white; transition:0.5s;}
 
-.tab-contents{
-    display: none;
-}
 .tab-contents.active-tab{
     display: block;
 }
 
 #education span{
-    color: white;
     font-weight: bold;
-    font-size: 18px;
     transition: 0.5s;
 }
-#education span:hover{
-    font-size: 20px;
-    transition: 0.5s;
+
+/* ----------------Technical Skill ----------------*/
+.tSkills{
+    background-color: rgb(0, 121, 227);
+    animation: fadeIn 1s ease 1s forwards;
+    opacity: 0;
+    padding: 0% 10%;
+   
+    margin-top: 0;
+    
 }
-/*--Projectx--*/
+.section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+@property --progress-value {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0;
+  }
+  @keyframes c-progress {
+    to {
+      --progress-value: 95;
+    }
+  }
+  @keyframes cpp-progress {
+    to {
+      --progress-value: 90;
+    }
+  }
+  @keyframes dsa-progress {
+    to {
+      --progress-value: 90;
+    }
+  }
+  @keyframes oops-progress {
+    to {
+      --progress-value: 95;
+    }
+  }
+  
+  @keyframes html-progress {
+    to {
+      --progress-value: 95;
+    }
+  }
+  @keyframes css-progress {
+    to {
+      --progress-value: 95;
+    }
+  }
+  @keyframes js-progress {
+    to {
+      --progress-value: 60;
+    }
+  }
+  @keyframes sql-progress {
+    to {
+      --progress-value: 75;
+    }
+  }
+  .progress-bar-container {
+    width: 25%;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .progress-bar-container h2 {
+    width: 100%;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) "%";
+  }
+  .c {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0b0421 calc(var(--progress-value) * 1%), #FFFFFF 0);
+    animation: c-progress 3s 1 forwards;
+  }
+  .c::before {
+    animation: c-progress 3s 1 forwards;
+  }
+  .cpp {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0b0421 calc(var(--progress-value) * 1%), #FFFFFF 0);
+    animation: cpp-progress 3s 1 forwards;
+  }
+  .cpp::before {
+    animation: cpp-progress 3s 1 forwards;
+  }
+  .dsa {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0b0421 calc(var(--progress-value) * 1%), #FFFFFF 0);
+    animation: dsa-progress 3s 1 forwards;
+  }
+  .dsa::before {
+    animation: dsa-progress 3s 1 forwards;
+  }
+  .oops {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0b0421 calc(var(--progress-value) * 1%), #FFFFFF 0);
+    animation: oops-progress 3s 1 forwards;
+  }
+  .oops::before {
+    animation: oops-progress 3s 1 forwards;
+  }
+  .html {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0b0421 calc(var(--progress-value) * 1%), #FFFFFF 0);
+    animation: html-progress 3s 1 forwards;
+  }
+  .html::before {
+    animation: html-progress 3s 1 forwards;
+  }
+  
+  .css {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(#0b0421 calc(var(--progress-value) * 1%), #FFFFFF 0);
+    animation: css-progress 3s 1 forwards;
+  }
+  .css::before {
+    animation: css-progress 3s 1 forwards;
+  }
+  
+  .js {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(#0b0421 calc(var(--progress-value) * 1%), #FFFFFF 0);
+    animation: js-progress 3s 1 forwards;
+  }
+  .js::before {
+    animation: js-progress 3s 1 forwards;
+  }
+  .sql {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0b0421 calc(var(--progress-value) * 1%), #FFFFFF 0);
+    animation: html-progress 3s 1 forwards;
+  }
+  .sql::before {
+    animation: sql-progress 3s 1 forwards;
+  }
+  
+  progress {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  
+/*------------------My Projects-----------*/
 #projects{
-    padding: 30px 0;
-    background-color: #212121ec;
+    padding: 0% 10%;
     margin: 40px;
-    border-radius: 10px;
-    filter: drop-shadow(0px 0px 100px #212121);
+    animation: fadeIn 1s ease 1s forwards;
+    opacity: 0;
 }
 .projects-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 40px;
     border-radius: 10px;
     margin-top: 50px;
+    padding: 10px;
 }
 .projects-list div{
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 121, 227) solid 2px;
     text-align: justify;
     padding: 40px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     border-radius: 10px;
     transition: background-color 0.5s, transform 0.5s;
@@ -283,7 +643,7 @@ nav ul li a:hover::after{
 }
 
 .projects-list div a{
-
+    
     margin-top: 20px;
     display: inline-block;
 }
@@ -304,12 +664,12 @@ nav ul li a:hover::after{
     width: 140px;
     height: 36px;
     color: white;
-    background-color: rgba(52, 52, 52, 0.774);
-    border: white 1px solid;
+    background-color: rgb(240, 194, 68);
+    border: rgb(0, 0, 0) 1px solid;
     transition: 0.5s;
 }
 .projects-list div:hover{
-    background: rgb(0,121,227);
+    background: rgb(240, 194, 68);
     transform: translateY(-10px);
 }
 .projects-list div i:hover{
@@ -318,45 +678,28 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 /*--contacts--*/
-.contactme{
-    background-color: #000000;
+.contactInfo{
+    font-size: 16px;
+    margin-left: 40%;
+    animation: fadeIn 1s ease 0.5s forwards;
+    opacity: 0;
+}
+.contactInfo p{
+    padding: 5px;
+}
+.contactInfo p i{
     
-}
-.contact-left{
-    flex-basis: 35%;
-}
-.contact-right{
-    flex-basis: 60%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.hide-phone-number {
-    display: inline-block;
-    font-family: monospace, monospace;
-    position: relative;
-  }
-.hide-phone-number::after {
-    margin-top: 8px;
-   content: "XXXXXX";
-   background: #000000;
-   position: absolute;
-   right: 19px;
-}
-  
-.contact-left p i{
-    color: rgb(0,121,227);
     margin-right: 15px;
     font-size: 25px;
 }
 .social-icons{
-    margin-top: 30px;
+    margin: 10px 20%;
 }
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: rgba(239, 239, 239, 0.814);
+    color: white;
     display: inline-block;
     transition: transform 0.5s;
 }
@@ -364,58 +707,61 @@ nav ul li a:hover::after{
     color: rgb(0,121,227);
     transform: translateY(-5px);
 }
-.btn.btn2{
-    font-size: 17px;
-    display: inline-block;
-    cursor: pointer;
-    margin-left: 20px;
-}
-.contact-right form{
-    align-items: center;
-    width: 90%;
-    margin-top: 80px;
-    background-color: #212121;
-    border-radius: 10px;
-    padding: 50px;
-}
-.contact-right form p{
-    margin-top: 20px;
-    margin-left: 20px;
 
+.hide-phone-number {
+    display: inline-block;
+    font-family: monospace, monospace;
+    position: relative;
+  }
+.hide-phone-number::after {
+    margin-top: 1px;
+   content: "XXXXXX";
+   background: rgb(240, 194, 68);
+   position: absolute;
+   right: 24px;
 }
+  
 form input, form textarea{
     width: 90%;
     height: 30%;
     border: 1px solid rgb(0,121,227);
     outline: none;
-    background:  rgba(90, 90, 90, 0.736);
+    background:  rgba(244, 244, 244, 0.85);
     padding: 15px;
     margin: 10px 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 15px;
     border-radius: 6px;
 }
-.contact-right a{
-    color: white;
-    font-size: 30px;
-    margin-left: 90%;
-    transition: 0.5s;
+.cForm{
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+    margin: 5% 20%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.51);
+    filter: drop-shadow(-19px 4px 13px #000000);
+    animation: fadeIn 1s ease 0.5s forwards;
+    opacity: 0;
 }
-.contact-right span{
-    margin-top: 20px;
+.contactform{
+    padding: 10px;
+    justify-content: center;
+}
+
+.submitmsg{
+    font-size: large;
+    color: rgb(0, 255, 0);
     display: block;
 }
+
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 25px;
     background-color:  #0d0d0d;
     font-weight: 300;
-    margin-top: 20px;
-    filter: drop-shadow(0px -10px 100px rgb(0,121,227));
 }
-.copyright p a{
-    text-decoration: none;
+.copyright p {
+    padding: 10px;
     color: white;
 }
 

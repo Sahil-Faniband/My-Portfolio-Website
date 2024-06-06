@@ -10,139 +10,195 @@
     <script src="https://kit.fontawesome.com/438a32c591.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
+
+        <div class="headcontainer">
             <nav class="top">
                 <a href="#header"><img src="sahil-high-resolution-logo-color-on-transparent-background.png" class="logo" ></a> 
                 <ul id="sidemenu" class="menu">
                     <li><a href="#header"><i class="fa-solid fa-house-user"></i>Home</a></li>
                     <li><a href="#about"><i class="fa-solid fa-user"></i></i>About</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-code"></i></i>Technical Skills</a></li>
                     <li><a href="#projects"><i class="fa-solid fa-lightbulb"></i>Projects</a></li>
                     <li><a href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
                     <i class="fa-solid fa-xmark" id="closebtn" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            
-            <div class="header-text">
-                <h2>>Hello World!_</h2>
-                <h1>I'm <span>Sahil Faniband</span><br> from India.</h1>
-                <p class="intro" style="font-size: 16px; color: rgb(161, 161, 161); padding: 7px;">Skilled creator of efficient code and <br>exciting user experiences.</p>
-               
-               <div class="profiles">
-                <a target="_blank" href="https://github.com/INFINITY-962"><i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/sahil-faniband"><i class="fa-brands fa-linkedin"></i></a>
-               </div>
-               <a href="Sahil_Faniband_Resume_blue.pdf" target="_blank" ><button class="btn" title="Click on me to Downloade Resume"><i class="fa-regular fa-download"></i> Resume</button></a>
-               <div class="scroll"><center>
-                    <p>Scroll Down</p>
-                    <br>
-                    <i class="fa-solid fa-circle-chevron-down fa-bounce"></i>
-                    </center>
-               </div>
-            </div>
         </div>
-    </div>
-
-    <!--About-->
-    <div id="about">
-       <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <h1 class="sub-title">About Me</h1>
-                <img src="02D622CC-C5E9-47F8-AE91-9D6E2FB882D5.jpeg" alt="">
+        <header class="banner" id="header">
+            <div class="banner__right">
+                <div class="header-text">
+                    <h2>>Hello World!_</h2>
+                    <h1>I'm <span>Sahil Faniband</span> <br><br>from India.</h1>
+                    <p class="intro" style="font-size: 25px; color: rgb(255, 255, 255); padding: 10px;font-family: Caveat, cursive;
+                    letter-spacing: 5px;
+                    animation: fadeIn 1s ease 1.5s forwards;
+                    opacity: 0;">Skilled Creator of Efficient Code and <br>Exciting User Experiences.</p>
+                   
+                   <div class="profiles">
+                    <a target="_blank" href="https://github.com/INFINITY-962"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/sahil-faniband"><i class="fa-brands fa-linkedin"></i></a>
+                   </div>
+                   <a href="Sahil_Faniband_Resume_blue.pdf" target="_blank" ><button class="btn" title="Click on me to Downloade Resume"><i class="fa-regular fa-download"></i> Resume</button></a>
+                   
+                </div>
+              <img
+                src="DF71884E-BDC8-469D-810E-A63A03FBEF8F-transformed.png"
+                alt="profile picture"
+                class="banner__profile"
+              />
             </div>
-            <div class="about-col-2">
+            <div class="banner__left">
                 
-                <p class="aboutme">
-                    <ul>
-                       <li>Currently, I am Pursuing B.E in Information Science and Engineering at KLS Gogte Institute of Technology in Belagavi, Karnataka, India.<br>
-                        As a team player, I am always open to learning and taking up new challenges.<br> I wish to use my technical skills to contribute to a team that works at scale and creates a positive impact on society.</li> 
-                     </ul>    
+            </div>
+          </header>
+
+<!--About Me-->
+    <div class="about_me" id="about">
+        <h1 class="title">About<span class="title__end"> Me</span></h1>
+        <div class="banner">
+            <div class="banner__left">
+                
+            </div>
+            <div class="aboutMe__right">
+                <p >
+                    Currently, I am Pursuing B.E in Information Science and Engineering at KLS Gogte Institute of Technology in Belagavi, Karnataka, India.
+                     <br>As a team player, I am always open to learning and taking up new challenges. I wish to use my technical skills to contribute to a team that works at scale and creates a positive impact on society.
                 </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('technical_skills')"><i class="fa-solid fa-code"></i> Technical Skills</p>
-                    <p class="tab-links" onclick="opentab('soft_skills')"><i class="fa-solid fa-infinity"></i> Soft Skills</p>
-                    <p class="tab-links" onclick="opentab('education')"><i class="fa-solid fa-school"></i> Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="technical_skills">
-                    <p><ul>
-                    <li>C</li></ul></p>
-                    <div class="skillcontainer">
-                    <div class="skills c">90%</div>
+                <div class="about-col-2">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')"><i class="fa-solid fa-school"></i> Education</p>
+                        <p class="tab-links" onclick="opentab('soft_skills')"><i class="fa-solid fa-infinity"></i> Soft Skills</p>
+                        <p class="tab-links" onclick="opentab('languages')"><i class="fa-regular fa-language"></i> Languages</p>
+                        
                     </div>
-                    <br>
-                    <p><ul>
-                    <li>C++</li></ul></p>
-                    <div class="skillcontainer">
-                    <div class="skills c">90%</div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li>
+                                <span>B.E in Information Science and Engineering</span>
+                                <br>KLS Gogte Institute of Technology Belagavi, Karnataka, India
+                                <br>7.71 CGPA
+                                <br><p style="text-align: right;" ><i class="fa-solid fa-calendar-days"></i>&nbsp;Expected Jul 2024</p>
+                            </li>
+                            <li>
+                                <span>XII (12th) in PCMCs</span>
+                                <br>KLE Prerana Residential PU College Hubli, Karnataka, India
+                                <br>84.8% (90.67% in PCM)
+                                <br><p style="text-align: right;"><i class="fa-solid fa-calendar-days"></i>&nbsp;Mar 2020</p>
+                            </li>
+                            <li>
+                                <span>X (10th) Secondary School</span>
+                                <br>SFC English Medium School Gadag, Karnataka, India
+                                <br>80.80%
+                                <br><p style="text-align: right;"><i class="fa-solid fa-calendar-days"></i>&nbsp;Mar 2018</p>
+                            </li>
+                        </ul>
                     </div>
-                    <br>
-                    <p><ul><li>Data Structures & Algorithms (DSA) </li></ul></p>
-                    <div class="skillcontainer">
-                    <div class="skills dsa">85%</div>
+                    <div class="tab-contents" id="soft_skills">
+                        <ul>
+                            <li><span>Problem Solving</span></li>
+                            <li><span>Adaptable & Flexible</span></li>
+                            <li><span>Observant</span></li>
+                            <li><span>Emotional Intelligent</span></li>
+                        </ul>
                     </div>
-                    <br>
-                    <p><ul>
-                    <li>Object-Oriented Programming (OOPs)</li></ul></p>
-                    <div class="skillcontainer">
-                    <div class="skills oops">90%</div>
+                    <div class="tab-contents" id="languages">
+                        <ul>
+                            <li><span>English</span></li>
+                            <li><span>Hindi</span></li>
+                            <li><span>Kannada</span></li>
+                        </ul>
                     </div>
-                    <br>
-                    <p><ul><li>HTML/CSS</li></ul></p>
-                    <div class="skillcontainer">
-                    <div class="skills htmlcss">80%</div>
-                    </div>
-                    <br>
-                    <p><ul><li>JavaScript</li></ul></p>
-                    <div class="skillcontainer">
-                    <div class="skills js">60%</div>
-                    </div>
-                    <br>
-                    <p><ul><li>SQL</li></ul></p>
-                    <div class="skillcontainer">
-                    <div class="skills sql">75%</div>
-                    </div>
-                </div>
-                <div class="tab-contents" id="soft_skills">
-                    <ul>
-                        <li><span>Problem Solving</span></li>
-                        <li><span>Adaptable & Flexible</span></li>
-                        <li><span>Observant</span></li>
-                        <li><span>Emotional Intelligent</span></li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li>
-                            <span>B.E in Information Science and Engineering</span>
-                            <br>KLS Gogte Institute of Technology Belagavi, Karnataka, India
-                            <br>7.71 CGPA
-                            <br><p style="text-align: right;" ><i class="fa-solid fa-calendar-days"></i>&nbsp;Expected Jul 2024</p>
-                        </li>
-                        <li>
-                            <span>XII (12th) in PCMCs</span>
-                            <br>KLE Prerana Residential PU College Hubli, Karnataka, India
-                            <br>84.8% (90.67% in PCM)
-                            <br><p style="text-align: right;"><i class="fa-solid fa-calendar-days"></i>&nbsp;Mar 2020</p>
-                        </li>
-                        <li>
-                            <span>X (10th) Secondary School</span>
-                            <br>SFC English Medium School Gadag, Karnataka, India
-                            <br>80.80%
-                            <br><p style="text-align: right;"><i class="fa-solid fa-calendar-days"></i>&nbsp;Mar 2018</p>
-                        </li>
-                    </ul>
+                    
                 </div>
             </div>
         </div>
-       </div>
     </div>
+<!-- Technical Skills-->
+<div class="tSkills" id="skills">
+    <h1 class="title" style="background-color: rgb(0, 121, 227); padding: 20px;">Technical<span class="title__end"> Skills</span></h1>
+    <section class="section flex">
+        
+        <div class="progress-bar-container">
+        <h2>
+            <label for="c">C</label>
+        </h2>
+        <div class="progress-bar c">
+            <progress id="c" min="0" max="100" value="95"></progress>
+        </div>
+        </div>
 
-    <!--Projects-->
+        <div class="progress-bar-container">
+        <h2>
+            <label for="cpp">C++</label>
+        </h2>
+        <div class="progress-bar css">
+            <progress id="cpp" min="0" max="100" value="90"></progress>
+        </div>
+        </div>
+
+        <div class="progress-bar-container">
+        <h2>
+            <label for="dsa">DSA</label>
+        </h2>
+        <div class="progress-bar dsa">
+            <progress id="dsa" min="0" max="100" value="90"></progress>
+        </div>
+        </div>
+        <div class="progress-bar-container">
+        <h2>
+            <label for="oops">OOPs</label>
+        </h2>
+        <div class="progress-bar oops">
+            <progress id="oops" min="0" max="100" value="95"></progress>
+        </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <h2>
+                <label for="html">HTML</label>
+            </h2>
+            <div class="progress-bar html">
+                <progress id="html" min="0" max="100" value="95"></progress>
+        </div>
+        </div>
+
+        <div class="progress-bar-container">
+        <h2>
+            <label for="css">CSS</label>
+        </h2>
+        <div class="progress-bar css">
+            <progress id="css" min="0" max="100" value="95"></progress>
+        </div>
+        </div>
+
+        <div class="progress-bar-container">
+        <h2>
+            <label for="js">JavaScript</label>
+        </h2>
+        <div class="progress-bar js">
+            <progress id="js" min="0" max="100" value="60"></progress>
+        </div>
+        </div>
+
+        
+
+        <div class="progress-bar-container">
+        <h2>
+            <label for="sql">SQL</label>
+        </h2>
+        <div class="progress-bar css">
+            <progress id="sql" min="0" max="100" value="75"></progress>
+        </div>
+        </div>
+    </section>
+</div>
+
+
+ <!---------------------Projects------------->
     <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">Projects</h1>
+        <h1 class="title" style=" padding-top: 20px;">My<span class="title__end"> Projects</span></h1>
+        <div class="projectcontainer">
             <div class="projects-list">
                 <div>
                     <i class="fa-solid fa-file-zipper"></i>
@@ -190,36 +246,50 @@
         </div>
     </div>
     <!--Contact-->
-    <div id="contact" class="contactme">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+    <div class="contactMe" id="contact">
+        <h1 class="title" style=" padding: 20px;">Contact<span class="title__end"> Me</span></h1>
+        <div class="banner">
+            <div style="width: 35%; height: 80vh;" class="banner__left">
+                <div class="aboutMeContainer"> <!-- Div element with the class "container", used as a wrapper -->
+                    <div class="card"> <!-- Div element with the class "card", representing a card container -->
+                        <div class="cover item"> <!-- Div element with the classes "cover" and "item", representing a cover item within the card -->
+                            <h1>Sahil<br />Faniband</h1> <!-- Heading level 1 element containing the text "Abbyshek Sharma" -->
+                        </div>
+                    </div>
+                </div>
+                <div class="contactInfo">
                     <p><i class="fa-solid fa-envelope"></i>sahilfaniband9602@gmail.com</p>
                     <p class="hide-phone-number"><i class="fa-sharp fa-solid fa-phone"></i>+91 9902442577</p>
                     <div class="social-icons">
                         <a target="_blank" href="https://instagram.com/sahil_faniband?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
                         <a target="_blank" href="https://twitter.com/sahil_faniband"><i class="fa-brands fa-x-twitter"></i></a>
                         <a target="_blank" href="https://www.facebook.com/sahil.faniband"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet" class="contactform">
-                        <p>Name:</p><input type="text" name="Name" placeholder="Your Name" required>
-                        <p>Email:</p><input type="email" name="Email" placeholder="example123@gmail.com" required>
-                        <p>Message:</p><textarea name="Message" rows="7" placeholder="Write Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit&nbsp;<i class="fa-solid fa-paper-plane"></i></button>
-                        
-                    </form>
-                    <a href="#header" ><i class="fa-sharp fa-solid fa-circle-chevron-up fa-bounce"></i></a>
-                    <span id="submitmsg"></span>
+                     </div>
                 </div>
             </div>
+            <div style="width: 65%; height: 80vh;" class="banner__right">
+                <div class="cForm">
+                    <form name="submit-to-google-sheet" class="contactform">
+                        <p>Name:</p>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <p>Email:</p>
+                        <input type="email" name="Email" placeholder="example123@gmail.com" required>
+                        <p>Message:</p>
+                        <textarea name="Message" rows="7" placeholder="Write Your Message"></textarea>
+                        <center><span id="submitmsg" class="submitmsg"></span></center>
+                        <center><button  type="submit" class="btn btn2">Send&nbsp;<i class="fa-solid fa-paper-plane"></i></button></center>
+                        
+                    </form>
+                    
+                </div>
+                
+            </div>
         </div>
-        
     </div>
+        
+
     <div class="copyright">
-        <p> &copy;</p> <p><a target="_blank" href="https://github.com/INFINITY-962">Developed by INFINITY-962 </a></p>
+        <p> &copy; Developed by Sahil Faniband</p>
     </div>
    
     <script>
@@ -256,7 +326,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                submitmsg.innerHTML = "Sent successfully"
+                submitmsg.innerHTML = "Sent Successfully"
                 setTimeout(function() {
                     submitmsg.innerHTML =""
                 }, 5000)
