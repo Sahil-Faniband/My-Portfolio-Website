@@ -134,6 +134,15 @@ nav ul li a:hover::after{
     color: rgb(240, 194, 68);
     transform: translateY(-5px);
 }
+.intro{
+  font-size: 25px; 
+  color: rgb(255, 255, 255); 
+  padding: 10px;
+  font-family: Caveat, cursive;
+  letter-spacing: 5px;
+  animation: fadeIn 1s ease 1.5s forwards;
+  opacity: 0;
+}
 
 /* Banner Styles */
 .banner {
@@ -232,7 +241,7 @@ nav ul li a:hover::after{
   }
   
   .card {
-    height: 400px; /* Sets the height of the card to 300px */
+    height: 425px; /* Sets the height of the card to 300px */
     width: 300px; /* Sets the width of the card to 300px */
     margin: 10px 0; /* Sets a margin of 10px on the top and bottom and 0 on the left and right */
     transition: ease all 2.3s; /* Specifies the transition effect for all properties with a duration of 2.3s and easing function ease */
@@ -255,7 +264,7 @@ nav ul li a:hover::after{
   }
   
   .card:hover .cover:after {
-    background-color: black; /* Changes the background color of the cover element to black when the card is hovered */
+    background-color: rgb(0, 0, 0); /* Changes the background color of the cover element to black when the card is hovered */
   }
   
   .card:hover .cover h1 {
@@ -309,7 +318,7 @@ nav ul li a:hover::after{
   }
   
   .card .cover.item {
-    background-image: url('02D622CC-C5E9-47F8-AE91-9D6E2FB882D5.PNG'); /* Sets the background image for the cover element */
+    background-image: url('B1C015B2-57F7-483A-A884-ACFB32BA2226-fotor-bg-remover-20230611155359.png'); /* Sets the background image for the cover element */
   }
   
   .card > .cover > h1 {
@@ -338,10 +347,10 @@ nav ul li a:hover::after{
     justify-content: center; /* Specifies the alignment of the flex items along the main axis */
   }
   .aboutMe__right{
-    font-size: 18px; color: rgb(0, 0, 0); 
-    text-align: justify;
+    font-size: 20px; color: rgb(0, 0, 0); 
+    text-align: left;
     padding-right: 8%;
-    margin-left: 5%;
+    margin-left: 10%;
     letter-spacing: 1px;
     animation: fadeIn 1s ease 1.5s forwards;
     opacity: 0;
@@ -607,11 +616,12 @@ nav ul li a:hover::after{
 /*------------------My Projects-----------*/
 #projects{
     padding: 0% 10%;
-    margin: 40px;
+    margin: 0px;
     animation: fadeIn 1s ease 1s forwards;
     opacity: 0;
 }
 .projects-list{
+  
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -621,14 +631,14 @@ nav ul li a:hover::after{
     padding: 10px;
 }
 .projects-list div{
-    background-color: rgb(255, 255, 255);
+    background-color: #c8c8c8;
     border: rgb(0, 121, 227) solid 2px;
-    text-align: justify;
+    text-align: left;
     padding: 40px;
     font-size: 18px;
     font-weight: 300;
     border-radius: 10px;
-    transition: background-color 0.5s, transform 0.5s;
+    transition: 0.5s, transform 0.5s;
 }
 .projects-list div i{
     font-size: 45px;
@@ -775,29 +785,47 @@ nav .fa-xmark{
 }
 @media only screen and (max-width: 1024px){
     #header{
-        background-image: url(Untitled---design-4.jpeg);
         background-attachment:fixed;
         background-position: center;
         background-size: cover;
     }
     .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 40%;
+        font-size: 18px;
+        padding-left: 5%;
+    }
+    .logo{
+      margin-left: 40%;
     }
     .header-text h1 , .about-col-1 h1 , .container h1 , .contact-left h1{
-        font-size: 25px;
+        font-size: 28px;
+        padding: 2%;
+        margin: 0%;
+        
+    }
+    .intro{
+      font-size: 20px;
+      letter-spacing: 4px;
+    }
+    .profiles{
+      margin-left: 5%;
+    }
+    .profiles a{
+      font-size: 30px;
+    }
+    .btn{
+      width: 120px;
+      height: 40px;
+      font-size: 15px;
+      margin-left: 5%;
+    }
+    .btn:hover{
+      width: 130px;
     }
     #about{
-        height: 1150px;
+        height: auto;
     }
-    .about-col-1{
-        flex-basis: 0%;
-    }
-    .about-col-2{
-        width: 250px;
-        font-size: medium;
-        flex-basis: 0%;
-    }
+    
     .tab-titles{
         justify-content: space-between;
     }
@@ -813,31 +841,32 @@ nav .fa-xmark{
     nav .fa-bars{
         display: block;
         font-size: 25px;
+        margin-right: 35px;
     }
     nav .fa-xmark{
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background-color: rgba(0, 121, 227, 0.797);
+        background-color: rgba(255, 255, 255, 0.8);
         position: fixed;
         top: 0;
-        right: -175px;
-        width: 175px;
-        height: 100vh;
+        right: -150px;
+        width: 125px;
+        height: 100%;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
     }
     nav ul li{
         display: block;
-        margin: 25px;
+        margin: 25px 30px;
     }
     nav ul .fa-xmark{
         font-size: 25px;
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 22.5px;
+        left: 80px;
         cursor: pointer;
     }
     .profiles a{
@@ -847,29 +876,76 @@ nav .fa-xmark{
         margin-top: 60px;
         font-size: 15px;
     }
-    .about-col-1 img{
-        width: 200%;
+    .tSkills{
+      padding: 0 5%;
+    }
+    .progress-bar-container{
+      width: 45%;
+    }
+    .projects-list{
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+    .projects-list div{
+      font-size: 12px;
     }
     .projects-list div h2{
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .projects-list div a button{
+      width: 115px;
+      font-size: 12px;
+    }
+    .projects-list div a button:hover{
+      width: 120px ;
+    }
+    .card{
+      padding: 0%;
+      margin: 0%;
     }
     .tab-links{
         margin-right: 40px;
     }
-    .contact-left, .contact-right{
+    .banner__right{
         flex-basis: 100%;
     }
-    .contact-right{
-        width: 60%;
+    .contactInfo{
+      align-content: center;
+      font-size: 18px;
+      margin-left: 10%;
     }
-    .contact-right a{
-        margin-left: 95%;
+    .contactInfo p i{
+      font-size: 20px;
+      margin-right: 10px;
     }
-    .contact-right form{
-        width: 110%;
+    .social-icons{
+      margin: 5px 10%;
+    }
+    .social-icons a{
+      font-size: 35px;
+      margin-right: 5px;
+    }
+    .contactMe .banner{
+      display: grid;
+    }
+    .aboutMeContainer{
+      margin-left: 10%;
+    }
+    .contactMe .banner .banner__left{
+      width: 100%;
+    }
+    .contactMe .banner .banner__right{
+      width: 100% ;
+    }
+    .cForm{
+      
+      margin: 5%;
+    }
+    
+    .contactform{
+        width: 100%;
         padding-left: 0%;
     }
     form input, form textarea{
-        width: 100%;
+        width: 90%;
     }
 }
