@@ -138,8 +138,8 @@ nav ul li a:hover::after{
   font-size: 25px; 
   color: rgb(255, 255, 255); 
   padding: 10px;
-  font-family: Caveat, cursive;
-  letter-spacing: 5px;
+  
+  letter-spacing: 3px;
   animation: fadeIn 1s ease 1.5s forwards;
   opacity: 0;
 }
@@ -790,9 +790,9 @@ nav .fa-xmark{
         background-size: cover;
     }
     .header-text{
-        margin-top: 40%;
+        margin-top: 25%;
         font-size: 18px;
-        padding-left: 5%;
+        padding-left: 0%;
     }
     .logo{
       margin-left: 40%;
