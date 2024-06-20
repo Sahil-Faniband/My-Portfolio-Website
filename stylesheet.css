@@ -9,8 +9,7 @@ html{
 }
 body{
    
-    background:linear-gradient (
-    #0d0d0d, #212121);
+    
     font-family:
     "Poppins";
     color:rgb(7, 7, 7);
@@ -22,10 +21,12 @@ body{
 
 .headcontainer{
     background-color: rgb(255, 255, 255);
+    border: white solid 1px;
+    border-radius: 5px;
     padding: 10px ;
     position: sticky; top: 0;
     z-index: 2;
-    filter: drop-shadow(0px 4px 13px #0b0421);
+    filter: drop-shadow(0px 4px 13px #000000);
 }
 .headcontainer nav ul li i{
     padding: 10px;
@@ -169,12 +170,12 @@ nav ul li a:hover::after{
   }
   .banner__profile {
     position:absolute;
-    left: 100%;
+    left: 110%;
     transform: translateX(-50%);
     bottom: 0;
-    width: 500px;
+    width: 350px;
     z-index: 1;
-    filter: drop-shadow(-19px 4px 13px #0b0421);
+    filter: drop-shadow(-19px 4px 13px #000000);
     transition: transform 0.5s ease, opacity 0.5s ease;
     
   }
@@ -790,12 +791,16 @@ nav .fa-xmark{
         background-size: cover;
     }
     .header-text{
-        margin-top: 25%;
+        margin-top: 20%;
         font-size: 18px;
         padding-left: 0%;
     }
     .logo{
       margin-left: 40%;
+    }
+    .banner__profile{
+      width: 300px;
+      left: 120%;
     }
     .header-text h1 , .about-col-1 h1 , .container h1 , .contact-left h1{
         font-size: 28px;
@@ -811,7 +816,7 @@ nav .fa-xmark{
       margin-left: 5%;
     }
     .profiles a{
-      font-size: 30px;
+      font-size: 50px;
     }
     .btn{
       width: 120px;
@@ -875,6 +880,9 @@ nav .fa-xmark{
     .scroll{
         margin-top: 60px;
         font-size: 15px;
+    }
+    .aboutMe__right{
+      margin: 4.5%;
     }
     .tSkills{
       padding: 0 5%;
