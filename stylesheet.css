@@ -767,8 +767,9 @@ form input, form textarea{
 
 .submitmsg{
     font-size: large;
-    color: rgb(0, 255, 0);
+    
     display: block;
+    animation: fadeIn 1s ease 0.5s forwards;
 }
 
 .copyright{

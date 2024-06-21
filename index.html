@@ -75,7 +75,7 @@
                             <li>
                                 <span>B.E in Information Science and Engineering</span>
                                 <br>KLS Gogte Institute of Technology Belagavi, Karnataka, India
-                                <br>7.71 CGPA
+                                <br>7.92 CGPA
                                 <br><p style="text-align: right;" ><i class="fa-solid fa-calendar-days"></i>&nbsp;Expected Jul 2024</p>
                             </li>
                             <li>
@@ -267,7 +267,7 @@
             </div>
             <div style="height: 80vh;"  class="banner__right">
                 <div class="cForm">
-                    <form name="submit-to-google-sheet" class="contactform">
+                    <form name="submit-to-google-sheet" id="contact-form" class="contactform" action="mailto:sahilfaniband9602@gmail.com" method="post" enctype="text/plain">
                         <p>Name:</p>
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <p>Email:</p>
@@ -278,7 +278,7 @@
                         <center><button  type="submit" class="btn btn2">Send&nbsp;<i class="fa-solid fa-paper-plane"></i></button></center>
                         
                     </form>
-                    
+                    <div class="submitmsg" id="status"></div>
                 </div>
                 
             </div>
@@ -324,7 +324,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                submitmsg.innerHTML = "Sent Successfully"
+                submitmsg.innerHTML = ""
                 setTimeout(function() {
                     submitmsg.innerHTML =""
                 }, 5000)
@@ -333,5 +333,12 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script>
+          (function() {
+              emailjs.init('L79rNvdebixCws0P9'); // Initialize EmailJS with your User ID
+          })();
+      </script>
+      <script src="script.js"></script>
 </body>
 </html>
