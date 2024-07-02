@@ -267,7 +267,7 @@
             </div>
             <div style="height: 80vh;"  class="banner__right">
                 <div class="cForm">
-                    <form name="submit-to-google-sheet" id="contact-form" class="contactform" action="mailto:sahilfaniband9602@gmail.com" method="post" enctype="text/plain">
+                    <form name="submit-to-google-sheet" id="contact-form" class="contactform" >
                         <p>Name:</p>
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <p>Email:</p>
@@ -316,7 +316,7 @@
         }
     </script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxjaEyKyx4RSkDB55by6CZddvvVY1qwxdm6mQEC8EJUOIAee05p2U5XFe0zlVnOMi6j/exec'
+        const scriptURL = 'https://docs.google.com/spreadsheets/d/15kdpfNLl8A_2P1bWTONBIMQknbE8JhgU3uiRdb_Ssbo/edit?usp=sharing'
         const form = document.forms['submit-to-google-sheet']
         const submitmsg=document.getElementById("submitmsg")
       
@@ -324,9 +324,9 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                submitmsg.innerHTML = ""
+                submitmsg.innerHTML = "sent.."
                 setTimeout(function() {
-                    submitmsg.innerHTML =""
+                    submitmsg.innerHTML ="sent..."
                 }, 5000)
                 form.reset()
             })
