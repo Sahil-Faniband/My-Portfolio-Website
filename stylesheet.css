@@ -79,12 +79,76 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: white ;
+}
+
+.preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 8px solid rgba(255, 255, 255, 0.503);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+.hide{
+  display: none;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+    border-bottom-color: rgb(0, 121, 227) ;
+    border-top-color: rgb(240, 194, 68);
+    
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+    border-bottom-color: rgb(0, 121, 227) ;
+    border-top-color: rgb(240, 194, 68);
+    
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
 .header-text{
     margin-top: 15%;
     padding-left: 15%;
     font-size: 30px;
     transition: 0.5s;
     animation: fadeIn 1.5s ease 1s forwards;
+    animation-delay: 2s;
     opacity: 0;
 }
 .header-text h1{
@@ -142,6 +206,7 @@ nav ul li a:hover::after{
   
   letter-spacing: 3px;
   animation: fadeIn 1s ease 1.5s forwards;
+  animation-delay: 2s;
   opacity: 0;
 }
 
@@ -176,7 +241,7 @@ nav ul li a:hover::after{
     width: 350px;
     z-index: 1;
     filter: drop-shadow(-19px 4px 13px #000000);
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 1.5s ease, opacity 1.5s ease;
     
   }
   .banner__content {
@@ -184,14 +249,16 @@ nav ul li a:hover::after{
     left: 16%;
     top: 20%;
     opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    animation: fadeIn 1s ease forwards;
+    transition: transform 1.5s ease, opacity 1.5s ease;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 2s;
   }
   .banner__title {
     font-family: "Montserrat", sans-serif;
     line-height: 40px;
     margin-bottom: 20px;
-    animation: fadeIn 1s ease 0.5s forwards;
+    animation: fadeIn 1s ease 1.5s forwards;
+    animation-delay: 2s;
     opacity: 0;
   }
   .banner__title--l {
@@ -204,7 +271,8 @@ nav ul li a:hover::after{
     font-size: 30px;
     font-family: "Caveat", cursive;
     letter-spacing: 5px;
-    animation: fadeIn 1s ease 1s forwards;
+    animation: fadeIn 2s ease 1.5s forwards;
+    animation-delay: 2s;
     opacity: 0;
   }
   
@@ -213,7 +281,7 @@ nav ul li a:hover::after{
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(-20px);
+      transform: translateY(20px);
     }
     to {
       opacity: 1;
@@ -354,6 +422,7 @@ nav ul li a:hover::after{
     margin-left: 10%;
     letter-spacing: 1px;
     animation: fadeIn 1s ease 1.5s forwards;
+    animation-delay: 5s;
     opacity: 0;
   }
 
@@ -686,8 +755,8 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .projects-list div:hover{
-    background: rgb(240, 194, 68);
-    transform: translateY(-10px);
+    
+    transform: translateY(-15px);
 }
 .projects-list div i:hover{
     
@@ -697,7 +766,7 @@ nav ul li a:hover::after{
 /*--contacts--*/
 .contactInfo{
     font-size: 16px;
-    margin-left: 40%;
+    margin-left: 25%;
     animation: fadeIn 1s ease 0.5s forwards;
     opacity: 0;
 }
@@ -707,22 +776,20 @@ nav ul li a:hover::after{
 .contactInfo p i{
     
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 45px;
 }
-.social-icons{
-    margin: 10px 20%;
-}
+
 .social-icons a{
     text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
+    font-size: 45px;
+    padding: 10px;
     color: white;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
     color: rgb(0,121,227);
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .hide-phone-number {
@@ -731,7 +798,7 @@ nav ul li a:hover::after{
     position: relative;
   }
 .hide-phone-number::after {
-    margin-top: 1px;
+    margin-top: 19px;
    content: "XXXXXX";
    background: rgb(240, 194, 68);
    position: absolute;

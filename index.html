@@ -247,7 +247,7 @@
     <div class="contactMe" id="contact">
         <h1 class="title" style=" padding: 20px;">Contact<span class="title__end"> Me</span></h1>
         <div class="banner">
-            <div style=" height: 80vh;" class="banner__left">
+            <div style=" height: 90vh;" class="banner__left">
                 <div class="aboutMeContainer"> <!-- Div element with the class "container", used as a wrapper -->
                     <div class="card"> <!-- Div element with the class "card", representing a card container -->
                         <div class="cover item"> <!-- Div element with the classes "cover" and "item", representing a cover item within the card -->
@@ -259,13 +259,15 @@
                     <p><i class="fa-solid fa-envelope"></i>sahilfaniband9602@gmail.com</p>
                     <p class="hide-phone-number"><i class="fa-sharp fa-solid fa-phone"></i>+91 9902442577</p>
                     <div class="social-icons">
+                        <a target="_blank" href="https://github.com/INFINITY-962"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/sahil-faniband"><i class="fa-brands fa-linkedin"></i></a>
                         <a target="_blank" href="https://instagram.com/sahil_faniband?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
                         <a target="_blank" href="https://twitter.com/sahil_faniband"><i class="fa-brands fa-x-twitter"></i></a>
                         <a target="_blank" href="https://www.facebook.com/sahil.faniband"><i class="fa-brands fa-facebook"></i></a>
                      </div>
                 </div>
             </div>
-            <div style="height: 80vh;"  class="banner__right">
+            <div style="height: 90vh;"  class="banner__right">
                 <div class="cForm">
                     <form name="submit-to-google-sheet" id="contact-form" class="contactform" >
                         <p>Name:</p>
@@ -289,7 +291,18 @@
     <div class="copyright">
         <p> &copy; Developed by Sahil Faniband</p>
     </div>
-   
+    <div id="preloader" class="preloader"></div>
+    <script>
+        // let preloader=getElementById("preloader");
+        // if(preloader){
+        //     window.addEventListener("load",()=>{
+        //         preloader.remove();
+        //     });
+        // }
+        setTimeout(function(){
+            document.getElementById('preloader').classList.remove('preloader');
+        }, 2000);
+    </script>
     <script>
         var tablinks=document.getElementsByClassName("tab-links");
         var tabcontents=document.getElementsByClassName("tab-contents");
