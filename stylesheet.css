@@ -88,7 +88,7 @@ nav ul li a:hover::after{
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: white ;
+  background: rgba(255, 255, 255, 0.9) ;
 }
 
 .preloader:before {
@@ -96,10 +96,12 @@ nav ul li a:hover::after{
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 8px solid rgba(255, 255, 255, 0.503);
+  border: 6px solid rgba(255, 255, 255, 0);
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  border-bottom-color: rgb(0, 121, 227) ;
+  border-top-color: rgb(240, 194, 68);
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
@@ -113,9 +115,6 @@ nav ul li a:hover::after{
   }
   50%{
     transform: rotate(180deg);
-    border-bottom-color: rgb(0, 121, 227) ;
-    border-top-color: rgb(240, 194, 68);
-    
   }
 
   100% {
@@ -129,9 +128,6 @@ nav ul li a:hover::after{
   }
   50%{
     transform: rotate(180deg);
-    border-bottom-color: rgb(0, 121, 227) ;
-    border-top-color: rgb(240, 194, 68);
-    
   }
 
   100% {
