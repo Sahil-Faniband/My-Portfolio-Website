@@ -804,7 +804,7 @@ nav ul li a:hover::after{
 form input, form textarea{
     width: 90%;
     height: 30%;
-    border: 1px solid rgb(0,121,227);
+    border: 2px solid rgb(0,121,227);
     outline: none;
     background:  rgba(244, 244, 244, 0.85);
     padding: 15px;
@@ -836,14 +836,23 @@ form input, form textarea{
 }
 
 .copyright{
-    width: 100%;
-    text-align: center;
-    background-color:  #0d0d0d;
+    background-color:  #000000;
     font-weight: 300;
+    display: flex;
+    align-items: center;
+    
+}
+.heart{
+  width: 40px;
 }
 .copyright p {
-    padding: 10px;
-    color: white;
+  font-size: medium;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.dw{
+  padding-left: 41%;
 }
 
 
